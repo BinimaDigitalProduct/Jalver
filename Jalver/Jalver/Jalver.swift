@@ -15,4 +15,9 @@ final class Jalver {
         return solved
     }
     
+    class func resolve<T where T: Configurator>(configurator: T.Type) -> T.Configured {
+        let configured = T.configure()
+        return configured
+    }
+    
 }
