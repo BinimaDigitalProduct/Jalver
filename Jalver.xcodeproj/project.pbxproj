@@ -15,6 +15,8 @@
 		01385CA51C7CF52C007B94CB /* Jalver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C951C7CF27A007B94CB /* Jalver.swift */; };
 		01385CA71C7CF77E007B94CB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385CA61C7CF77E007B94CB /* Car.swift */; };
 		01385CA91C7CF85A007B94CB /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385CA81C7CF85A007B94CB /* Vehicle.swift */; };
+		0175F0FC1C7F8595009E084F /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175F0FB1C7F8595009E084F /* Configurator.swift */; };
+		0175F0FD1C7F8595009E084F /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175F0FB1C7F8595009E084F /* Configurator.swift */; };
 		01AEA3B21C7BA35A00705D22 /* Jalver.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AEA3B11C7BA35A00705D22 /* Jalver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01AEA3B91C7BA35A00705D22 /* Jalver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AEA3AE1C7BA35A00705D22 /* Jalver.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,7 @@
 		01385CA31C7CF381007B94CB /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = TestingObjects/Person.swift; sourceTree = "<group>"; };
 		01385CA61C7CF77E007B94CB /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = TestingObjects/Car.swift; sourceTree = "<group>"; };
 		01385CA81C7CF85A007B94CB /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = TestingObjects/Vehicle.swift; sourceTree = "<group>"; };
+		0175F0FB1C7F8595009E084F /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configurator.swift; path = Jalver/Configurator/Configurator.swift; sourceTree = "<group>"; };
 		01AEA3AE1C7BA35A00705D22 /* Jalver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jalver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AEA3B11C7BA35A00705D22 /* Jalver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jalver.h; sourceTree = "<group>"; };
 		01AEA3B31C7BA35A00705D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 			children = (
 				01385C951C7CF27A007B94CB /* Jalver.swift */,
 				01385C981C7CF28D007B94CB /* Resolver */,
+				0175F0FA1C7F857A009E084F /* Configurator */,
 			);
 			name = Jalver;
 			sourceTree = "<group>";
@@ -111,6 +115,14 @@
 				01385CA81C7CF85A007B94CB /* Vehicle.swift */,
 			);
 			name = TestingObjects;
+			sourceTree = "<group>";
+		};
+		0175F0FA1C7F857A009E084F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0175F0FB1C7F8595009E084F /* Configurator.swift */,
+			);
+			name = Configurator;
 			sourceTree = "<group>";
 		};
 		01AEA3A41C7BA35A00705D22 = {
@@ -260,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01385C9A1C7CF29E007B94CB /* Resolver.swift in Sources */,
+				0175F0FC1C7F8595009E084F /* Configurator.swift in Sources */,
 				01385CA51C7CF52C007B94CB /* Jalver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +285,7 @@
 				01385C9B1C7CF29E007B94CB /* Resolver.swift in Sources */,
 				01385C971C7CF27A007B94CB /* Jalver.swift in Sources */,
 				01385CA71C7CF77E007B94CB /* Car.swift in Sources */,
+				0175F0FD1C7F8595009E084F /* Configurator.swift in Sources */,
 				01385CA41C7CF381007B94CB /* Person.swift in Sources */,
 				01385CA01C7CF31D007B94CB /* JalverTests.swift in Sources */,
 			);
