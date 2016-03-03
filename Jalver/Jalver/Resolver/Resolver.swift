@@ -11,4 +11,13 @@ import Foundation
 protocol Resolver {
     
     static func resolve() -> Self
+    
+}
+
+extension Resolver {
+    
+    func postInit(afterInit:((solved: Self) -> Self)) -> Self {
+        return afterInit(solved: self)
+    }
+    
 }

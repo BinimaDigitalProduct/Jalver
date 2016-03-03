@@ -24,5 +24,18 @@ class JalverTest: XCTestCase {
         let solvedCar = Jalver.resolve(Car)
         XCTAssertEqual(solvedCar.brand, "Audi", "Car brand must be Audi")
     }
+    
+    func testJalverResolveFinalClassCarWithDefaultPassengersSettedOnPostInitAtCarResolverExtension() {
+        let solvedCar = Jalver.resolve(Car)
+        XCTAssertEqual(solvedCar.passengers, 6, "Car passengers must be equal to 6")
+    }
+    
+    func testJalverResolveFinalClassCarWithPassengersSettedOnPostInit() {
+        let solvedCar = Jalver.resolve(Car).postInit { (solved) -> (Car) in
+            solved.passengers = 3
+            return solved
+        }
+        XCTAssertEqual(solvedCar.passengers, 3, "Car passengers must be equal to 3")
+    }
 }
 

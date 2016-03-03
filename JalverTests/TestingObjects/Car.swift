@@ -11,6 +11,8 @@ import Foundation
 final class Car: Vehicle {
 
     let brand: String
+    var passengers: Int?
+    
     
     init(model: String, brand: String) {
         self.brand = brand
@@ -22,7 +24,10 @@ final class Car: Vehicle {
 extension Car: Resolver {
     
     static func resolve() -> Car {
-        return Car(model: "A3", brand: "Audi")
+        return Car(model: "A3", brand: "Audi").postInit({ (solved) -> Car in
+            solved.passengers = 6
+            return solved
+        })
     }
     
 }
