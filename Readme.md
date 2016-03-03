@@ -3,6 +3,7 @@
 Swift lightweight factory framework.
 
 ---
+
 ##Basic usage
 The usage is simple, you only need to create a extension of your **final** class or struct with the implementation of `Resolver` protocol. The only thing to do here is create your Object and return it.
 
@@ -24,7 +25,7 @@ let person = Jalver.resolve(Person)
 
 **Jalver** will use the resolve method declared on your object extension to create the instance and will return it.
 
----
+
 ##After injection.
 There is two ways to do this.
 You can do a global after injection method with the Resolver extension of your object, let's take a look:
@@ -49,6 +50,7 @@ let person = Jalver.resolve(Person).postInit() { (solved) -> Person in
 	solved.secondName = "Alonso"
 }
 ```
+
 
 ##Run-time arguments.
 Actually there is no way to inject runtime arguments calling the resolve method, but you can do it throught the `postInit` method.
