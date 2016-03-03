@@ -36,6 +36,7 @@ extension Person: Resolver {
     static func resolve() -> Person {
         return Person(name: "Julian").postInit() { (solved) -> Person in
 				solved.secondName = "Alonso"
+				return solved
 			}
     }
     
@@ -48,6 +49,7 @@ The second way of do this is writing the `postInit()`method after call **Jalver*
 ```swift 
 let person = Jalver.resolve(Person).postInit() { (solved) -> Person in
 	solved.secondName = "Alonso"
+	return solved
 }
 ```
 
