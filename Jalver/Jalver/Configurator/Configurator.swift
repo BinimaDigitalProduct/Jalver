@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Configurator {
+public protocol Configurator {
     
     typealias Configured
     

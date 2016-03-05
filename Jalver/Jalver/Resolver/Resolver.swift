@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Resolver {
+public protocol Resolver {
     
     static func resolve() -> Self
     
