@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "01AEA3AD1C7BA35A00705D22"
-               BuildableName = "Jalver.framework"
-               BlueprintName = "Jalver"
+               BlueprintIdentifier = "0115350D1C8F69FC0004ED02"
+               BuildableName = "JalverOSX.framework"
+               BlueprintName = "JalverOSX"
                ReferencedContainer = "container:Jalver.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "01AEA3B71C7BA35A00705D22"
-               BuildableName = "JalverTests.xctest"
-               BlueprintName = "JalverTests"
-               ReferencedContainer = "container:Jalver.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "01AEA3AD1C7BA35A00705D22"
-            BuildableName = "Jalver.framework"
-            BlueprintName = "Jalver"
-            ReferencedContainer = "container:Jalver.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "01AEA3AD1C7BA35A00705D22"
-            BuildableName = "Jalver.framework"
-            BlueprintName = "Jalver"
+            BlueprintIdentifier = "0115350D1C8F69FC0004ED02"
+            BuildableName = "JalverOSX.framework"
+            BlueprintName = "JalverOSX"
             ReferencedContainer = "container:Jalver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "01AEA3AD1C7BA35A00705D22"
-            BuildableName = "Jalver.framework"
-            BlueprintName = "Jalver"
+            BlueprintIdentifier = "0115350D1C8F69FC0004ED02"
+            BuildableName = "JalverOSX.framework"
+            BlueprintName = "JalverOSX"
             ReferencedContainer = "container:Jalver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

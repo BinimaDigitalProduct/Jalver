@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011535161C8F6BD50004ED02 /* JalverOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 011535101C8F69FC0004ED02 /* JalverOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		011535171C8F6C340004ED02 /* Jalver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C951C7CF27A007B94CB /* Jalver.swift */; };
+		011535181C8F6C340004ED02 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C991C7CF29E007B94CB /* Resolver.swift */; };
+		011535191C8F6C340004ED02 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175F0FB1C7F8595009E084F /* Configurator.swift */; };
+		0115351A1C8F6C350004ED02 /* Jalver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C951C7CF27A007B94CB /* Jalver.swift */; };
+		0115351B1C8F6C350004ED02 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C991C7CF29E007B94CB /* Resolver.swift */; };
+		0115351C1C8F6C350004ED02 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175F0FB1C7F8595009E084F /* Configurator.swift */; };
 		01385C971C7CF27A007B94CB /* Jalver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C951C7CF27A007B94CB /* Jalver.swift */; };
 		01385C9B1C7CF29E007B94CB /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C991C7CF29E007B94CB /* Resolver.swift */; };
 		01385CA01C7CF31D007B94CB /* JalverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C9E1C7CF31D007B94CB /* JalverTests.swift */; };
@@ -17,14 +24,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01385C951C7CF27A007B94CB /* Jalver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Jalver.swift; path = Jalver/Jalver.swift; sourceTree = "<group>"; };
-		01385C991C7CF29E007B94CB /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Jalver/Resolver/Resolver.swift; sourceTree = "<group>"; };
+		011535011C8F69BC0004ED02 /* Jalver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jalver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0115350E1C8F69FC0004ED02 /* JalverOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JalverOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		011535101C8F69FC0004ED02 /* JalverOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JalverOSX.h; path = ../JalverOSX/JalverOSX.h; sourceTree = "<group>"; };
+		011535121C8F69FC0004ED02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../JalverOSX/Info.plist; sourceTree = "<group>"; };
+		01385C951C7CF27A007B94CB /* Jalver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Jalver.swift; path = ../Sources/Jalver/Jalver.swift; sourceTree = "<group>"; };
+		01385C991C7CF29E007B94CB /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = ../Sources/Jalver/Resolver/Resolver.swift; sourceTree = "<group>"; };
 		01385C9E1C7CF31D007B94CB /* JalverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JalverTests.swift; path = Jalver/JalverTests.swift; sourceTree = "<group>"; };
 		01385CA31C7CF381007B94CB /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = TestingObjects/Person.swift; sourceTree = "<group>"; };
 		01385CA61C7CF77E007B94CB /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = TestingObjects/Car.swift; sourceTree = "<group>"; };
 		01385CA81C7CF85A007B94CB /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = TestingObjects/Vehicle.swift; sourceTree = "<group>"; };
-		0175F0FB1C7F8595009E084F /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configurator.swift; path = Jalver/Configurator/Configurator.swift; sourceTree = "<group>"; };
-		01906F631C84D4030097C16F /* Jalver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jalver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0175F0FB1C7F8595009E084F /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configurator.swift; path = ../Sources/Jalver/Configurator/Configurator.swift; sourceTree = "<group>"; };
 		01AEA3B11C7BA35A00705D22 /* Jalver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jalver.h; sourceTree = "<group>"; };
 		01AEA3B31C7BA35A00705D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01AEA3B81C7BA35A00705D22 /* JalverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JalverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +42,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		01906F5F1C84D4030097C16F /* Frameworks */ = {
+		011534FD1C8F69BC0004ED02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0115350A1C8F69FC0004ED02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,14 +66,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01385C931C7CF247007B94CB /* Jalver */ = {
+		0115350F1C8F69FC0004ED02 /* JalverOSX */ = {
+			isa = PBXGroup;
+			children = (
+				011535101C8F69FC0004ED02 /* JalverOSX.h */,
+				011535121C8F69FC0004ED02 /* Info.plist */,
+			);
+			name = JalverOSX;
+			path = "Jalver-OSX";
+			sourceTree = "<group>";
+		};
+		01385C931C7CF247007B94CB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				01385C951C7CF27A007B94CB /* Jalver.swift */,
 				01385C981C7CF28D007B94CB /* Resolver */,
 				0175F0FA1C7F857A009E084F /* Configurator */,
 			);
-			name = Jalver;
+			name = Sources;
+			path = Jalver;
 			sourceTree = "<group>";
 		};
 		01385C941C7CF25D007B94CB /* Resources */ = {
@@ -112,7 +140,9 @@
 		01AEA3A41C7BA35A00705D22 = {
 			isa = PBXGroup;
 			children = (
+				01385C931C7CF247007B94CB /* Sources */,
 				01AEA3B01C7BA35A00705D22 /* Jalver */,
+				0115350F1C8F69FC0004ED02 /* JalverOSX */,
 				01AEA3BC1C7BA35A00705D22 /* JalverTests */,
 				01AEA3AF1C7BA35A00705D22 /* Products */,
 			);
@@ -122,7 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				01AEA3B81C7BA35A00705D22 /* JalverTests.xctest */,
-				01906F631C84D4030097C16F /* Jalver.framework */,
+				011535011C8F69BC0004ED02 /* Jalver.framework */,
+				0115350E1C8F69FC0004ED02 /* JalverOSX.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				01AEA3B11C7BA35A00705D22 /* Jalver.h */,
-				01385C931C7CF247007B94CB /* Jalver */,
 				01385C941C7CF25D007B94CB /* Resources */,
 			);
 			path = Jalver;
@@ -150,32 +180,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		01906F601C84D4030097C16F /* Headers */ = {
+		011534FE1C8F69BC0004ED02 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0115350B1C8F69FC0004ED02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011535161C8F6BD50004ED02 /* JalverOSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		01906F621C84D4030097C16F /* Jalver */ = {
+		011535001C8F69BC0004ED02 /* Jalver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01906F681C84D4040097C16F /* Build configuration list for PBXNativeTarget "Jalver" */;
+			buildConfigurationList = 011535061C8F69BC0004ED02 /* Build configuration list for PBXNativeTarget "Jalver" */;
 			buildPhases = (
-				01906F5E1C84D4030097C16F /* Sources */,
-				01906F5F1C84D4030097C16F /* Frameworks */,
-				01906F601C84D4030097C16F /* Headers */,
-				01906F611C84D4030097C16F /* Resources */,
+				011534FC1C8F69BC0004ED02 /* Sources */,
+				011534FD1C8F69BC0004ED02 /* Frameworks */,
+				011534FE1C8F69BC0004ED02 /* Headers */,
+				011534FF1C8F69BC0004ED02 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Jalver;
-			productName = Jalverr;
-			productReference = 01906F631C84D4030097C16F /* Jalver.framework */;
+			productName = Jalver;
+			productReference = 011535011C8F69BC0004ED02 /* Jalver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0115350D1C8F69FC0004ED02 /* JalverOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011535131C8F69FC0004ED02 /* Build configuration list for PBXNativeTarget "JalverOSX" */;
+			buildPhases = (
+				011535091C8F69FC0004ED02 /* Sources */,
+				0115350A1C8F69FC0004ED02 /* Frameworks */,
+				0115350B1C8F69FC0004ED02 /* Headers */,
+				0115350C1C8F69FC0004ED02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JalverOSX;
+			productName = "Jalver-OSX";
+			productReference = 0115350E1C8F69FC0004ED02 /* JalverOSX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		01AEA3B71C7BA35A00705D22 /* JalverTests */ = {
@@ -205,7 +261,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Jalver;
 				TargetAttributes = {
-					01906F621C84D4030097C16F = {
+					011535001C8F69BC0004ED02 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					0115350D1C8F69FC0004ED02 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 					01AEA3B71C7BA35A00705D22 = {
@@ -225,14 +284,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01906F621C84D4030097C16F /* Jalver */,
+				011535001C8F69BC0004ED02 /* Jalver */,
+				0115350D1C8F69FC0004ED02 /* JalverOSX */,
 				01AEA3B71C7BA35A00705D22 /* JalverTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		01906F611C84D4030097C16F /* Resources */ = {
+		011534FF1C8F69BC0004ED02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0115350C1C8F69FC0004ED02 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,10 +316,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01906F5E1C84D4030097C16F /* Sources */ = {
+		011534FC1C8F69BC0004ED02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011535171C8F6C340004ED02 /* Jalver.swift in Sources */,
+				011535191C8F6C340004ED02 /* Configurator.swift in Sources */,
+				011535181C8F6C340004ED02 /* Resolver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011535091C8F69FC0004ED02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0115351A1C8F6C350004ED02 /* Jalver.swift in Sources */,
+				0115351C1C8F6C350004ED02 /* Configurator.swift in Sources */,
+				0115351B1C8F6C350004ED02 /* Resolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +353,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		01906F691C84D4040097C16F /* Debug */ = {
+		011535071C8F69BC0004ED02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -283,9 +363,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Jalver/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jalver.Jalver;
+				PRODUCT_BUNDLE_IDENTIFIER = org.Jalver.Jalver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -293,7 +373,7 @@
 			};
 			name = Debug;
 		};
-		01906F6A1C84D4040097C16F /* Release */ = {
+		011535081C8F69BC0004ED02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -303,14 +383,50 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Jalver/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jalver.Jalver;
+				PRODUCT_BUNDLE_IDENTIFIER = org.Jalver.Jalver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		011535141C8F69FC0004ED02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = JalverOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.Jalver.JalverOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		011535151C8F69FC0004ED02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = JalverOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.Jalver.JalverOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -351,6 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -392,6 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -425,11 +543,19 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01906F681C84D4040097C16F /* Build configuration list for PBXNativeTarget "Jalver" */ = {
+		011535061C8F69BC0004ED02 /* Build configuration list for PBXNativeTarget "Jalver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01906F691C84D4040097C16F /* Debug */,
-				01906F6A1C84D4040097C16F /* Release */,
+				011535071C8F69BC0004ED02 /* Debug */,
+				011535081C8F69BC0004ED02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		011535131C8F69FC0004ED02 /* Build configuration list for PBXNativeTarget "JalverOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011535141C8F69FC0004ED02 /* Debug */,
+				011535151C8F69FC0004ED02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
