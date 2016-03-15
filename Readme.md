@@ -91,7 +91,7 @@ final class VehicleConfigurator: Configurator {
 let model = "A3"
 let solvedVehicle = Jalver.resolve(VehicleConfigurator.self) { (inout configurator: VehicleConfigurator) -> Void in
             configurator.model = model
-        }
+}
 ```
 
 ---
