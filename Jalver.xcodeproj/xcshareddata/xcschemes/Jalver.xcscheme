@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "016618691C98BE7F00A3F60F"
+               BuildableName = "JalverTests.xctest"
+               BlueprintName = "JalverTests"
+               ReferencedContainer = "container:Jalver.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "011535001C8F69BC0004ED02"
+            BuildableName = "Jalver.framework"
+            BlueprintName = "Jalver"
+            ReferencedContainer = "container:Jalver.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

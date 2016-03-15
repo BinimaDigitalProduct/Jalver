@@ -12,5 +12,8 @@ public protocol Configurator {
     
     typealias Configured
     
-    static func configure() -> Configured
+    init()
+    
+    func configure() -> Configured
+    
 }

@@ -31,7 +31,7 @@ class JalverTest: XCTestCase {
     }
     
     func testJalverResolveFinalClassCarWithPassengersSettedOnPostInit() {
-        let solvedCar = Jalver.resolve(Car).postInit { (solved) -> (Car) in
+        let solvedCar = Jalver.resolve(Car).afterInjections { (solved) -> (Car) in
             solved.passengers = 3
             return solved
         }

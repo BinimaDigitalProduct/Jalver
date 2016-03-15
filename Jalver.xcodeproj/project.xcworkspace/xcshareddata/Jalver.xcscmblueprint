@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "343DCB146BAF7DEF08A55DC74FB364F5914AF6DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ED8F37F219643EEB9B96ED0238F2E65F87DD477C" : 0,
+    "343DCB146BAF7DEF08A55DC74FB364F5914AF6DC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7DF556B0-1FCE-4A28-AB2D-61EBE986DD19",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ED8F37F219643EEB9B96ED0238F2E65F87DD477C" : "..\/..",
+    "343DCB146BAF7DEF08A55DC74FB364F5914AF6DC" : "Jalver\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Jalver",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Jalver.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JulianAlonso\/Jalver",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "343DCB146BAF7DEF08A55DC74FB364F5914AF6DC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JulianAlonso\/Kino.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED8F37F219643EEB9B96ED0238F2E65F87DD477C"
+    }
+  ]
+}

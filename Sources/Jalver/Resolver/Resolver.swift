@@ -16,8 +16,8 @@ public protocol Resolver {
 
 extension Resolver {
     
-    func postInit(afterInit:((solved: Self) -> Self)) -> Self {
-        return afterInit(solved: self)
+    func afterInjections(afterInjections:((solved: Self) -> Self)) -> Self {
+        return afterInjections(solved: self)
     }
     
 }

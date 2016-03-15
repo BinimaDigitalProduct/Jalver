@@ -24,10 +24,10 @@ final class Car: Vehicle {
 extension Car: Resolver {
     
     static func resolve() -> Car {
-        return Car(model: "A3", brand: "Audi").postInit({ (solved) -> Car in
+        return Car(model: "A3", brand: "Audi").afterInjections { (solved) -> Car in
             solved.passengers = 6
             return solved
-        })
+        }
     }
     
 }
