@@ -90,7 +90,7 @@ final class VehicleConfigurator: Configurator {
 //The way to call this on our code is the next: 
 let model = "A3"
 let solvedVehicle = Jalver.resolve(VehicleConfigurator.self) { (inout configurator: VehicleConfigurator) -> Void in
-            configurator.model = model
+    configurator.model = model
 }
 ```
 
