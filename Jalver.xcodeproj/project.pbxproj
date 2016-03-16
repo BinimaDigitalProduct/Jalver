@@ -10,7 +10,7 @@
 		011535171C8F6C340004ED02 /* Jalver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C951C7CF27A007B94CB /* Jalver.swift */; };
 		011535181C8F6C340004ED02 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C991C7CF29E007B94CB /* Resolver.swift */; };
 		011535191C8F6C340004ED02 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175F0FB1C7F8595009E084F /* Configurator.swift */; };
-		016618721C98BEFF00A3F60F /* JalverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C9E1C7CF31D007B94CB /* JalverTests.swift */; };
+		016618721C98BEFF00A3F60F /* JalverTestsWithResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C9E1C7CF31D007B94CB /* JalverTestsWithResolve.swift */; };
 		016618731C98BEFF00A3F60F /* JalverTestWithConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016618641C98B75000A3F60F /* JalverTestWithConfigurator.swift */; };
 		016618741C98BF0300A3F60F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385CA31C7CF381007B94CB /* Person.swift */; };
 		016618751C98BF0300A3F60F /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385CA81C7CF85A007B94CB /* Vehicle.swift */; };
@@ -19,6 +19,12 @@
 		016618781C98BF0D00A3F60F /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01385C991C7CF29E007B94CB /* Resolver.swift */; };
 		016618791C98BF0D00A3F60F /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175F0FB1C7F8595009E084F /* Configurator.swift */; };
 		0166188A1C98C94A00A3F60F /* JalverOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 011535121C8F69FC0004ED02 /* JalverOSX.h */; };
+		01E38C051C999F6B009F0A6D /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E38C041C999F6B009F0A6D /* Singleton.swift */; };
+		01E38C061C999F6B009F0A6D /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E38C041C999F6B009F0A6D /* Singleton.swift */; };
+		01E38C071C999F6B009F0A6D /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E38C041C999F6B009F0A6D /* Singleton.swift */; };
+		01E38C091C99A0B7009F0A6D /* JalverScopeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E38C081C99A0B7009F0A6D /* JalverScopeable.swift */; };
+		01E38C0A1C99A0B7009F0A6D /* JalverScopeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E38C081C99A0B7009F0A6D /* JalverScopeable.swift */; };
+		01E38C0B1C99A0B7009F0A6D /* JalverScopeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E38C081C99A0B7009F0A6D /* JalverScopeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +33,7 @@
 		011535121C8F69FC0004ED02 /* JalverOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JalverOSX.h; path = JalverOSX/JalverOSX.h; sourceTree = "<group>"; };
 		01385C951C7CF27A007B94CB /* Jalver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Jalver.swift; path = ../Sources/Jalver/Jalver.swift; sourceTree = "<group>"; };
 		01385C991C7CF29E007B94CB /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = ../Sources/Jalver/Resolver/Resolver.swift; sourceTree = "<group>"; };
-		01385C9E1C7CF31D007B94CB /* JalverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JalverTests.swift; path = Jalver/JalverTests.swift; sourceTree = "<group>"; };
+		01385C9E1C7CF31D007B94CB /* JalverTestsWithResolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JalverTestsWithResolve.swift; path = Jalver/JalverTestsWithResolve.swift; sourceTree = "<group>"; };
 		01385CA31C7CF381007B94CB /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = TestingObjects/Person.swift; sourceTree = "<group>"; };
 		01385CA61C7CF77E007B94CB /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = TestingObjects/Car.swift; sourceTree = "<group>"; };
 		01385CA81C7CF85A007B94CB /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = TestingObjects/Vehicle.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		0175F0FB1C7F8595009E084F /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configurator.swift; path = ../Sources/Jalver/Configurator/Configurator.swift; sourceTree = "<group>"; };
 		01AEA3B11C7BA35A00705D22 /* Jalver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jalver.h; sourceTree = "<group>"; };
 		01AEA3B31C7BA35A00705D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01E38C041C999F6B009F0A6D /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Singleton.swift; path = Sources/Jalver/CommonProtocols/Scopes/Singleton.swift; sourceTree = SOURCE_ROOT; };
+		01E38C081C99A0B7009F0A6D /* JalverScopeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JalverScopeable.swift; path = Sources/Jalver/CommonProtocols/Scopes/JalverScopeable.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				01385C951C7CF27A007B94CB /* Jalver.swift */,
+				01E38BFD1C9997AA009F0A6D /* CommonProtocols */,
 				01385C981C7CF28D007B94CB /* Resolver */,
 				0175F0FA1C7F857A009E084F /* Configurator */,
 			);
@@ -105,7 +114,7 @@
 		01385C9C1C7CF2FA007B94CB /* Jalver */ = {
 			isa = PBXGroup;
 			children = (
-				01385C9E1C7CF31D007B94CB /* JalverTests.swift */,
+				01385C9E1C7CF31D007B94CB /* JalverTestsWithResolve.swift */,
 				016618641C98B75000A3F60F /* JalverTestWithConfigurator.swift */,
 			);
 			name = Jalver;
@@ -175,6 +184,23 @@
 				01385C941C7CF25D007B94CB /* Resources */,
 			);
 			path = Jalver;
+			sourceTree = "<group>";
+		};
+		01E38BFD1C9997AA009F0A6D /* CommonProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				01E38C021C999F53009F0A6D /* Scopes */,
+			);
+			name = CommonProtocols;
+			sourceTree = "<group>";
+		};
+		01E38C021C999F53009F0A6D /* Scopes */ = {
+			isa = PBXGroup;
+			children = (
+				01E38C081C99A0B7009F0A6D /* JalverScopeable.swift */,
+				01E38C041C999F6B009F0A6D /* Singleton.swift */,
+			);
+			name = Scopes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				011535171C8F6C340004ED02 /* Jalver.swift in Sources */,
+				01E38C091C99A0B7009F0A6D /* JalverScopeable.swift in Sources */,
 				011535191C8F6C340004ED02 /* Configurator.swift in Sources */,
+				01E38C051C999F6B009F0A6D /* Singleton.swift in Sources */,
 				011535181C8F6C340004ED02 /* Resolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,10 +360,12 @@
 			files = (
 				016618791C98BF0D00A3F60F /* Configurator.swift in Sources */,
 				016618751C98BF0300A3F60F /* Vehicle.swift in Sources */,
+				01E38C071C999F6B009F0A6D /* Singleton.swift in Sources */,
 				016618741C98BF0300A3F60F /* Person.swift in Sources */,
 				016618761C98BF0300A3F60F /* Car.swift in Sources */,
 				016618731C98BEFF00A3F60F /* JalverTestWithConfigurator.swift in Sources */,
-				016618721C98BEFF00A3F60F /* JalverTests.swift in Sources */,
+				01E38C0B1C99A0B7009F0A6D /* JalverScopeable.swift in Sources */,
+				016618721C98BEFF00A3F60F /* JalverTestsWithResolve.swift in Sources */,
 				016618781C98BF0D00A3F60F /* Resolver.swift in Sources */,
 				016618771C98BF0D00A3F60F /* Jalver.swift in Sources */,
 			);
@@ -345,6 +375,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E38C0A1C99A0B7009F0A6D /* JalverScopeable.swift in Sources */,
+				01E38C061C999F6B009F0A6D /* Singleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +454,7 @@
 		016618881C98C91E00A3F60F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -434,12 +467,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Jalver.JalverOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		016618891C98C91E00A3F60F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -562,6 +597,7 @@
 				016618711C98BE8000A3F60F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		016618871C98C91E00A3F60F /* Build configuration list for PBXNativeTarget "JalverOSX" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +606,7 @@
 				016618891C98C91E00A3F60F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01AEA3A81C7BA35A00705D22 /* Build configuration list for PBXProject "Jalver" */ = {
 			isa = XCConfigurationList;
