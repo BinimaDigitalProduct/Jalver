@@ -12,6 +12,8 @@ public protocol Resolver {
     
     static func resolve() -> Self
     
+    mutating func postInit()
+    
 }
 
 extension Resolver {
@@ -19,5 +21,7 @@ extension Resolver {
     func afterInjections(afterInjections:((solved: Self) -> Self)) -> Self {
         return afterInjections(solved: self)
     }
+    
+    mutating func postInit() { }
     
 }

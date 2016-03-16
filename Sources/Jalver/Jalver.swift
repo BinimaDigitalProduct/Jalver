@@ -11,7 +11,8 @@ import Foundation
 public final class Jalver {
     
     public class func resolve<T where T: Resolver>(type: T.Type) -> T {
-        let solved = type.resolve()
+        var solved = type.resolve()
+        solved.postInit()
         return solved
     }
     

@@ -8,7 +8,7 @@
 
 import XCTest
 
-class JalverTest: XCTestCase {
+class JalverTestWithResolve: XCTestCase {
     
     func testJalverResolveStructPersonWithNameJane() {
         let solvedPerson = Jalver.resolve(Person)
@@ -37,5 +37,27 @@ class JalverTest: XCTestCase {
         }
         XCTAssertEqual(solvedCar.passengers, 3, "Car passengers must be equal to 3")
     }
+    
+    func testJalverResolveStructWithPostInitMutatingMethod() {
+        let solvedTest = Jalver.resolve(Test)
+        XCTAssertEqual(solvedTest.text, "Tested", "Test text must be equal to Tested")
+    }
 }
 
+struct Test {
+    
+    var text: String?
+    
+    mutating func postInit() {
+        self.text = "Tested"
+    }
+    
+}
+
+extension Test: Resolver {
+    
+    static func resolve() -> Test {
+        return Test()
+    }
+    
+}
