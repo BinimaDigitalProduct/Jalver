@@ -16,7 +16,7 @@ public protocol Resolver {
     
 }
 
-extension Resolver {
+public extension Resolver {
     
     func afterInjections(afterInjections:((solved: Self) -> Self)) -> Self {
         return afterInjections(solved: self)

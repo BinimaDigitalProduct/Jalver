@@ -12,7 +12,7 @@ public protocol Singleton: JalverScopeable {
     
 }
 
-extension Singleton {
+public extension Singleton {
     
     func getScope() -> JalverScope {
         return .Singleton

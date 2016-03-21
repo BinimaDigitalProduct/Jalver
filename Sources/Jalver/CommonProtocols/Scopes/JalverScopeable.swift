@@ -18,8 +18,7 @@ public protocol JalverScopeable {
     func getScope() -> JalverScope
     
 }
-
-extension JalverScopeable {
+public extension JalverScopeable {
     
     var scope: JalverScope {
         get {

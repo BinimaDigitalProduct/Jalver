@@ -16,7 +16,7 @@ public final class Jalver {
         return solved
     }
     
-    public class func resolve<T where T: Configurator>(configurator: T.Type, with: (inout configurator: T) -> Void) -> T.Configured {
+    public class func resolve<T where T: Configurator>(configurator: T.Type, with: (inout configurator: T) -> Void = { _ in }) -> T.Configured {
         var created = configurator.init()
         with(configurator: &created)
         return created.configure()
