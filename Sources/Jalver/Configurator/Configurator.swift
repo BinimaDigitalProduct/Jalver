@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Configurator {
     
-    typealias Configured
+    associatedtype Configured
     
     init()
     
