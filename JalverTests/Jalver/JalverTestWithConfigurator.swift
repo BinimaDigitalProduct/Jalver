@@ -11,14 +11,14 @@ import XCTest
 class JalverTestWithConfigurator: XCTestCase {
     
     func testCreatingVehicleClassWithConfiguratorAndModelAudi() {
-        let solvedVehicle = Jalver.resolve(VehicleConfigurator.self) { (inout configurator: VehicleConfigurator) -> Void in
+        let solvedVehicle = Jalver.resolve(VehicleConfigurator.self) { (configurator: inout VehicleConfigurator) -> Void in
             configurator.model = "A3"
         }
         XCTAssertEqual(solvedVehicle.model, "A3", "Vehicle model must be equal to A3")
     }
     
     func testCreatingCarFinalClassWithConfiguratorModelA3BrandAudi() {
-        let solvedCar = Jalver.resolve(CarConfigurator.self) { (inout configurator: CarConfigurator) -> Void in
+        let solvedCar = Jalver.resolve(CarConfigurator.self) { (configurator: inout CarConfigurator) -> Void in
             configurator.brand = "Audi"
         }
         XCTAssertEqual(solvedCar.model, "A3", "Car model must be equal to A3")
@@ -26,7 +26,7 @@ class JalverTestWithConfigurator: XCTestCase {
     }
     
     func testCreatingPersonStructWithConfiguratorAndNamePaco() {
-        let person = Jalver.resolve(PersonConfigurator.self) { (inout configurator: PersonConfigurator) -> Void in
+        let person = Jalver.resolve(PersonConfigurator.self) { (configurator: inout PersonConfigurator) -> Void in
             configurator.name = "Paco"
         }
         XCTAssertEqual(person.name, "Paco", "Person name must be equal to Paco")

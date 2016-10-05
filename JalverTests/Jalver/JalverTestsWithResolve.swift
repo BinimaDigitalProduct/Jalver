@@ -11,27 +11,27 @@ import XCTest
 class JalverTestWithResolve: XCTestCase {
     
     func testJalverResolveStructPersonWithNameJane() {
-        let solvedPerson = Jalver.resolve(Person)
+        let solvedPerson = Jalver.resolve(Person.self)
         XCTAssertEqual(solvedPerson.name, "Jane", "Person name must be Jane")
     }
     
     func testJalverResolveFinalClassCarWithModelA3() {
-        let solvedCar = Jalver.resolve(Car)
+        let solvedCar = Jalver.resolve(Car.self)
         XCTAssertEqual(solvedCar.model, "A3", "Car model must be A3")
     }
     
     func testJalverResolveFinalClassCarWithBrandAudi() {
-        let solvedCar = Jalver.resolve(Car)
+        let solvedCar = Jalver.resolve(Car.self)
         XCTAssertEqual(solvedCar.brand, "Audi", "Car brand must be Audi")
     }
     
     func testJalverResolveFinalClassCarWithDefaultPassengersSettedOnPostInitAtCarResolverExtension() {
-        let solvedCar = Jalver.resolve(Car)
+        let solvedCar = Jalver.resolve(Car.self)
         XCTAssertEqual(solvedCar.passengers, 6, "Car passengers must be equal to 6")
     }
     
     func testJalverResolveFinalClassCarWithPassengersSettedOnPostInit() {
-        let solvedCar = Jalver.resolve(Car).afterInjections { (solved) -> (Car) in
+        let solvedCar = Jalver.resolve(Car.self).afterInjections { (solved) -> (Car) in
             solved.passengers = 3
             return solved
         }
@@ -39,7 +39,7 @@ class JalverTestWithResolve: XCTestCase {
     }
     
     func testJalverResolveStructWithPostInitMutatingMethod() {
-        let solvedTest = Jalver.resolve(Test)
+        let solvedTest = Jalver.resolve(Test.self)
         XCTAssertEqual(solvedTest.text, "Tested", "Test text must be equal to Tested")
     }
 }

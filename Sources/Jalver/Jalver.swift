@@ -10,15 +10,15 @@ import Foundation
 
 public final class Jalver {
     
-    public class func resolve<T where T: Resolver>(type: T.Type) -> T {
+    public class func resolve<T>(_ type: T.Type) -> T where T: Resolver {
         var solved = type.resolve()
         solved.postInit()
         return solved
     }
     
-    public class func resolve<T where T: Configurator>(configurator: T.Type, with: (inout configurator: T) -> Void = { _ in }) -> T.Configured {
+    public class func resolve<T>(_ configurator: T.Type, with: (_ configurator: inout T) -> Void = { _ in }) -> T.Configured where T: Configurator {
         var created = configurator.init()
-        with(configurator: &created)
+        with(&created)
         return created.configure()
     }
     

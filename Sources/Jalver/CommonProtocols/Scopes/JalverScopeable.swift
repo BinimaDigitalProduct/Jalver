@@ -9,8 +9,8 @@
 import Foundation
 
 public enum JalverScope {
-    case Singleton
-    case Default
+    case singleton
+    case `default`
 }
 
 public protocol JalverScopeable {
@@ -27,7 +27,7 @@ public extension JalverScopeable {
     }
     
     func getScope() -> JalverScope {
-        return .Default
+        return .default
     }
     
 }
