@@ -8,9 +8,12 @@
 
 import Foundation
 
-protocol Configurator {
+public protocol Configurator: JalverScopeable {
     
-    typealias Configured
+    associatedtype Configured
     
-    static func configure() -> Configured
+    init()
+    
+    func configure() -> Configured
+    
 }
