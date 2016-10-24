@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Julian Alonso" => "julian.alonso.dev@gmail.com" }
   s.source           = { :git => "https://github.com/julianalonso/Jalver.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/SmokeJuli'
+  s.social_media_url = 'https://twitter.com/MaisterJuli'
 
   s.platform     = :ios, '9.0'
   s.requires_arc = true
 
-  s.source_files = 'Jalver/**/*.swift'
+  s.source_files = 'Sources/**/*.swift'
   
 end
