@@ -15,15 +15,15 @@ public enum JalverScope {
 
 public protocol JalverScopeable {
     
+    var scope: JalverScope { get }
+    
     func getScope() -> JalverScope
     
 }
 public extension JalverScopeable {
     
     var scope: JalverScope {
-        get {
-            return self.getScope()
-        }
+        return self.getScope()
     }
     
     func getScope() -> JalverScope {

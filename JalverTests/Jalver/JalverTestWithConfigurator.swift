@@ -32,6 +32,24 @@ class JalverTestWithConfigurator: XCTestCase {
         XCTAssertEqual(person.name, "Paco", "Person name must be equal to Paco")
     }
     
+    //MARK: - Singleton
+    func testCreatingVehicleSingletonWithConfigurator() {
+        let first = Jalver.resolve(SingletonVehicleConfigurator.self)
+        let second = Jalver.resolve(SingletonVehicleConfigurator.self)
+        
+        XCTAssert(first === second, "Second object must be identical to first object")
+    }
+    
+    func testCreatingVehicleSingletonWithConfiguratorAndRuntimeArgs() {
+        let first = Jalver.resolve(SingletonCarConfigurator.self) { (configurator: inout SingletonCarConfigurator) in
+            configurator.brand = "BMW"
+        }
+        let second = Jalver.resolve(SingletonCarConfigurator.self)
+        
+        XCTAssertEqual(first.brand, "BMW", "The car brand must be BMW")
+        XCTAssertEqual(second.brand, "BMW", "The car brand must be BMW")
+        XCTAssert(first === second, "Second object must be identical to first object")
+    }
 }
 
 // MARK: - Configurators
@@ -62,6 +80,24 @@ private final class PersonConfigurator: Configurator {
     
     func configure() -> Person {
         return Person(name: self.name)
+    }
+    
+}
+
+private final class SingletonVehicleConfigurator: Configurator, Singleton {
+
+    func configure() -> Vehicle {
+        return Vehicle(model: "X5")
+    }
+    
+}
+
+private final class SingletonCarConfigurator: Configurator, Singleton {
+    
+    var brand: String!
+    
+    func configure() -> Car {
+        return Car(model: "X3", brand: self.brand)
     }
     
 }
