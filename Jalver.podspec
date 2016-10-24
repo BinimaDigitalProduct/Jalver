@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Jalver"
-  s.version          = "0.2.0"
+  s.version          = "0.2.1"
   s.summary          = "Lightweight Swift factory framework to resolve dependencies."
   s.tvos.deployment_target = '9.0'
   s.ios.deployment_target = '9.0'
