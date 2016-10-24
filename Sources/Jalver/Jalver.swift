@@ -13,8 +13,6 @@ private let javer = Jalver()
 
 public final class Jalver {
     
-    static var instances: [String: AnyObject] = [:]
-    
     public class func resolve<T>(_ type: T.Type) -> T where T: Resolver {
         var solved = type.resolve()
         solved.postInit()
