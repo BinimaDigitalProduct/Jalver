@@ -13,13 +13,13 @@ extension Person: Resolver {
     static func resolve() -> Person {
         return Person(name: "Julian")
     }
-    
+
 }
 ```
 
 From now, **Jalver** will call the resolve method and return your object. The way to do it is this:
 
-```swift 
+```swift
 let person = Jalver.resolve(Person)
 ```
 
@@ -27,7 +27,7 @@ let person = Jalver.resolve(Person)
 
 
 ##After injection.
-There is two ways to do this.
+There are two ways to do this.
 You can do a global after injection method with the Resolver extension of your object, let's take a look:
 
 ```swift
@@ -39,14 +39,14 @@ extension Person: Resolver {
 				return solved
 			}
     }
-    
+
 }
 ```
 With this, the secondName property of our final class must be declared like `var`.
 
 The second way of do this is writing the `afterInjections()`method after call **Jalver**.resolve() like there:
 
-```swift 
+```swift
 let person = Jalver.resolve(Person).afterInjections() { (solved) -> Person in
 	solved.secondName = "Alonso"
 	return solved
@@ -59,12 +59,12 @@ Configurator is a protocol designed to create any type of object. Let's take a l
 
 ```swift
 final class VehicleConfigurator: Configurator {
-    
+
     func configure() -> Vehicle {
         return Vehicle(model: "A3")
     }
-    
-} 
+
+}
 ```
 
 By this way, you create an object that is not a final Class.
@@ -78,16 +78,16 @@ With configuratos we can provide run-time argumets using custom vars in configur
 
 ```swift
 final class VehicleConfigurator: Configurator {
-    
+
     var model: String!
-    
+
     func configure() -> Vehicle {
         return Vehicle(model: self.model)
     }
-    
+
 }
 
-//The way to call this on our code is the next: 
+//The way to call this on our code is the next:
 let model = "A3"
 let solvedVehicle = Jalver.resolve(VehicleConfigurator.self) { (inout configurator: VehicleConfigurator) -> Void in
     configurator.model = model
