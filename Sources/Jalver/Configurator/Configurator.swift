@@ -17,3 +17,18 @@ public protocol Configurator: JalverScopeable {
     func configure() -> Configured
     
 }
+
+public extension Configurator {
+    
+    func configure() -> Configured {
+        fatalError("JALVER: Calling not implemented configure() at: \(self)")
+    }
+    
+}
+
+open class ParentConfigurator<T>: Configurator {
+    public typealias Configured = T
+    required public init() {
+        
+    }
+}
