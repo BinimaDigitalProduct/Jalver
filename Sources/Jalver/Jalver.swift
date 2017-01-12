@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-private let javer = Jalver()
-
 public final class Jalver {
     
     static var instances: [String: Any] = [:]
@@ -36,7 +34,7 @@ public final class Jalver {
         return configured
     }
     
-    private class func createOrGetInstance<T: Configurator>(of: T) -> T.Configured {
+    private class func createOrGetInstance<T>(of: T) -> T.Configured where T: Configurator {
         var configured: T.Configured!
         if let retrieved = Jalver.instances[name(of)] {
             configured = retrieved as! T.Configured
