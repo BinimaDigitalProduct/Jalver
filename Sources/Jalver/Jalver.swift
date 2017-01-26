@@ -13,12 +13,6 @@ public final class Jalver {
     
     static var instances: [String: Any] = [:]
     
-    public class func resolve<T>(_ type: T.Type) -> T where T: Resolver {
-        var solved = type.resolve()
-        solved.postInit()
-        return solved
-    }
-    
     public class func resolve<T>(_ configurator: T.Type, with: (_ configurator: inout T) -> Void = { _ in }) -> T.Configured where T: Configurator {
         var configured: T.Configured!
         var created = configurator.init()

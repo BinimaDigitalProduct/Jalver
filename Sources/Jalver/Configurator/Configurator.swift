@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Configurator: JalverScopeable {
+protocol Configurator: JalverScopeable {
     
     associatedtype Configured
     
@@ -18,8 +18,10 @@ public protocol Configurator: JalverScopeable {
     
 }
 
-open class ParentConfigurator<T>: Configurator {
+open class Resolver<T>: Configurator {
+    
     public typealias Configured = T
+    
     required public init() {
         
     }
