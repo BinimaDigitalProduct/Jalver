@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Configurator: JalverScopeable {
+public protocol Configurator: JalverScopeable {
     
     associatedtype Configured
     
