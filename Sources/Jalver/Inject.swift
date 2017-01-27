@@ -8,6 +8,12 @@
 
 import Foundation
 
+protocol InjectedProperty {
+    
+    func resolve(_ module: Module)
+    
+}
+
 final class Inject<T: Configurator> {
     
     var injected: T.Configured {
