@@ -12,11 +12,12 @@ public class Module {
     
     typealias Factory = () -> Any
     
-    var components: [Key: Factory] = [:]
+    var factories: [Key: Factory] = [:]
+    var components: [Key: Any] = [:]
     
     private func register<T: Configurator>(tag: Tag? = nil, _ configurator: T.Type, _ with: ((inout T, Module) -> Void)? = nil) {
         let key = Key(type: configurator.Configured.self, tag: tag)
-        self.components[key] = {
+        self.factories[key] = {
             Jalver.resolve(configurator) { [unowned self] (c: inout T) in
                 with?(&c, self)
             }
@@ -25,14 +26,14 @@ public class Module {
     
     private func register<B: Builder>(tag: Tag? = nil, _ builder: B.Type) {
         let key = Key(type: builder.BuildingType.self, tag: tag)
-        self.components[key] = {
+        self.factories[key] = {
             
         }
     }
     
     func resolve<T>(tag: Tag? = nil) -> T? {
         let key = Key(type: T.self, tag: tag)
-        return self.components[key]!() as? T
+        return self.factories[key]!() as? T
     }
     
     init() {
