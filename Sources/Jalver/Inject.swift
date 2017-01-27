@@ -9,15 +9,32 @@
 import Foundation
 
 protocol InjectedProperty {
+
+    static var injectType: Any.Type { get }
     
     func resolve(_ module: Module)
     
 }
 
-final class Inject<T: Configurator> {
+public final class Inject<T>: InjectedProperty {
     
-    var injected: T.Configured {
-        return Jalver.resolve(T.self)
+    static var injectType: Any.Type {
+        return T.self
+    }
+    
+    var _value: T?
+    
+    public lazy var value: T {
+        print("accessing to _value of type \(T.self)")
+        return self._value!
+    }
+    
+    public init() { }
+    
+    func resolve(_ module: Module) {
+        print("resolve value of type: \(T.self) at Module: \(module)")
+        let solved: T = module.resolve()!
+        self._value = solved
     }
     
 }

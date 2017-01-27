@@ -17,7 +17,7 @@ public struct Key {
 
 extension Key: Hashable {
     
-    var hashValue: Int {
+    public var hashValue: Int {
         return "\(self.type)-\(self.tag)".hashValue
     }
     
