@@ -10,8 +10,9 @@ import Foundation
 
 public extension Jalver {
     
-    class func resolve<B>(_ builder: B.Type, with module: Module) -> B.BuildingType where B: Builder {
-        let builder = builder.init()
+    class func resolve<B>(_ builder: B.Type, with module: Module) -> B.BuildingType where B: BuilderProtocol {
+        print("Resolving: \(B.BuildingType.self) with builder: \(B.self) and module: \(module)")
+        let builder = builder.init(module)
         //Fill builder Inject dependencies
         module.fillInjectProperties(builder)
         let object = builder.build()
@@ -30,12 +31,14 @@ extension Module {
         var superClassMirror = mirror.superclassMirror
         while superClassMirror != nil {
             superClassMirror?.children.forEach(self.fill)
+            superClassMirror = superClassMirror?.superclassMirror
         }
         
         mirror.children.forEach(self.fill)
     }
     
     func fill(_ child: Mirror.Child) {
+        print(child)
         guard let inject = child.value as? InjectedProperty else { return }
         inject.resolve(self)
     }

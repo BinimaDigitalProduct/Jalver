@@ -15,7 +15,7 @@ open class Module {
     var factories: [Key: Factory] = [:]
     var components: [Key: Any] = [:]
     
-    public func register<B: Builder>(tag: Tag? = nil, _ builder: B.Type) {
+    public func register<B: BuilderProtocol>(tag: Tag? = nil, _ builder: B.Type) {
         let key = Key(type: builder.BuildingType.self, tag: tag)
         self.factories[key] = { Jalver.resolve(builder, with: self) }
     }

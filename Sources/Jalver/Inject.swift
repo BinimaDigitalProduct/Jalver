@@ -24,8 +24,7 @@ public final class Inject<T>: InjectedProperty {
     
     var _value: T?
     
-    public lazy var value: T {
-        print("accessing to _value of type \(T.self)")
+    public var value: T {
         return self._value!
     }
     
