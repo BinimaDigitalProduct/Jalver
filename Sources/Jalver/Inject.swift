@@ -31,8 +31,7 @@ public final class Inject<T>: InjectedProperty {
     public init() { }
     
     func resolve(_ module: Module) {
-        print("resolve value of type: \(T.self) at Module: \(module)")
-        let solved: T = module.resolve()!
+        let solved: T = module.resolve()
         self._value = solved
     }
     

@@ -8,6 +8,14 @@
 
 import Foundation
 
+public final class Some {
+    let name: String
+    
+    init(_ name: String) {
+        self.name = name
+    }
+}
+
 public extension Jalver {
     
     class func resolve<B>(_ builder: B.Type, with module: Module) -> B.BuildingType where B: BuilderProtocol {
@@ -38,7 +46,6 @@ extension Module {
     }
     
     func fill(_ child: Mirror.Child) {
-        print(child)
         guard let inject = child.value as? InjectedProperty else { return }
         inject.resolve(self)
     }
