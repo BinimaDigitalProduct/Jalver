@@ -20,27 +20,27 @@ protocol TypeBuilder {
 
 protocol Definition: TypeBuilder {
 
-    var type: Any.Type { get }
-    var factory: Factory { get }
-    var module: Module? { get }
+    func build(module: Module, _ with: @escaping (inout Any) -> Void) -> Any
     
 }
 
-final class BuilderDefinition<T>: Definition {
+final class BuilderDefinition<U>: Definition where U: BuilderProtocol {
+
+    var builder: U
     
-    var type: Any.Type { return T.self }
-    let factory: Factory
-    weak var module: Module?
-    
-    init(factory: @escaping () -> T) {
-        self.factory = factory
-        self.module = nil
+    init(builder: U) {
+        self.builder = builder
     }
     
+    func build(module: Module, _ with: @escaping (inout Any) -> Void) -> Any {
+        return Jalver.resolve(self.builder, module: module) { (builder: inout U) in
+            var abuilder: Any = builder
+            with(&abuilder)
+        }
+    }
     
     func builds(type: Any.Type) -> Bool {
-        let otherBuildingTypes: [Any.Type] = [(T?).self, (T!).self]
-        return otherBuildingTypes.contains { type == $0 }
+        return self.builder.builds(type: type)
     }
     
 }

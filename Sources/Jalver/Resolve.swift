@@ -18,9 +18,11 @@ public final class Some {
 
 public extension Jalver {
     
-    class func resolve<B>(_ builder: B.Type, with module: Module) -> B.BuildingType where B: BuilderProtocol {
+    class func resolve<B>(_ builder: B, module: Module, with: (_ builder: inout B) -> Void = { _ in }) -> B.BuildingType where B: BuilderProtocol {
         print("Resolving: \(B.BuildingType.self) with builder: \(B.self) and module: \(module)")
-        let builder = builder.init(module)
+        var builder = builder
+        //Execute with block 
+        with(&builder) 
         //Fill builder Inject dependencies
         module.fillInjectProperties(builder)
         let object = builder.build()

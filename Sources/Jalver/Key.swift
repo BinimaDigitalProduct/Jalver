@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Key {
+struct Key {
     
     let type: Any.Type
     var tag: Tag?
